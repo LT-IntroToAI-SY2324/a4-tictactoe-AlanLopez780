@@ -26,11 +26,15 @@ class Dog:
 
 bergdog = Dog("black", 7, 78.2, "logan")
 ninadog = Dog("brown", 3, 100, "hobbs")
+alandog = Dog("gold", 10, 35, "scoop")
 
 print(bergdog)
 print(ninadog)
+print(alandog)
 
 bergdog.play_fetch(20)
 ninadog.play_fetch(15)
+alandog.play_fetch(5)
 
 print(f"{ninadog.name} has played fetch {ninadog.fetch_count} times")
+print(f"{alandog.name} has played fetch {alandog.fetch_count} times")
