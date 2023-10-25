@@ -26,14 +26,15 @@ class TTTBoard:
         self.board[pos] = player
         return True
     
-    def has_won(self, player):
+    def has_won(self, player) -> bool:
         for x in [0, 3, 6]:
-            if self.board[x + 0] == self.board[x + 1] == self.board [x + 2]:
+            if (self.board[x + 0] == self.board[x + 1] == self.board [x + 2]) and (self.board[x] and self.board[x + 1] and self.board[x + 2]) != "*":
                 return True
-            elif 
+            else:
+                return False
             
     def game_over(self):
-        if has_won() == True or :
+        if has_won == True or make_move(self, )
 
 
     
