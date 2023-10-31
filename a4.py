@@ -32,7 +32,7 @@ class TTTBoard:
             return True
         elif self.board[::3] == ps or self.board[1::3] == ps or self.board[2::3] == ps:
             return True
-        elif self.board[::4] == ps or self.board[2:7:2]:
+        elif self.board[::4] == ps or self.board[2:7:2] == ps:
             return True
         
         return False
@@ -96,12 +96,12 @@ if __name__ == "__main__":
     # need to write some more tests to make sure that your TTTBoard class is behaving
     # properly.
     brd = TTTBoard()
-    print(brd.board)
-    print(brd)
+    # print(brd.board)
+    # print(brd)
     brd.make_move("X", 8)
     brd.make_move("O", 7)
     brd.make_move("O", 8)
-    print(brd)
+    # print(brd)
 
     assert brd.game_over() == False
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     assert brd.has_won("O") == True
     assert brd.game_over() == True
 
-    print("All tests passed!")
+    # print("All tests passed!")
 
     # uncomment to play!
-    # play_tic_tac_toe()
+    play_tic_tac_toe()
